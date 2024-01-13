@@ -8,7 +8,6 @@ import os
 
 
 load_dotenv('data.env')
-
 db_connection = mysql.connector.connect(
     host=os.getenv("DB_HOST1"),
     user=os.getenv("DB_USER1"),
@@ -16,10 +15,10 @@ db_connection = mysql.connector.connect(
     database=os.getenv("DB_NAME1")
 )
 '''db_connection = mysql.connector.connect(
-    host=os.getenv("DB_HOST1"),
-    user=os.getenv("DB_USER1"),
-    password=os.getenv("DB_PASS1"),
-    database=os.getenv("DB_NAME1")
+    host=os.getenv("DB_HOST2"),
+    user=os.getenv("DB_USER2"),
+    password=os.getenv("DB_PASS2"),
+    database=os.getenv("DB_NAME2")
 )'''
 # Создание курсора для работы с базой данных
 db_cursor = db_connection.cursor()
