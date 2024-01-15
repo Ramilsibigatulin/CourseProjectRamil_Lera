@@ -14,12 +14,8 @@ db_connection = mysql.connector.connect(
     password=os.getenv("DB_PASS1"),
     database=os.getenv("DB_NAME1")
 )
-'''db_connection = mysql.connector.connect(
-    host=os.getenv("DB_HOST2"),
-    user=os.getenv("DB_USER2"),
-    password=os.getenv("DB_PASS2"),
-    database=os.getenv("DB_NAME2")
-)'''
+
+
 # Создание курсора для работы с базой данных
 db_cursor = db_connection.cursor()
 
