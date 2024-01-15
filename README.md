@@ -1,22 +1,36 @@
 # Сервис автоматического распределения задач
 
 ## Описание
+
 Это приложение на основе Tkinter для автоматического распределения задач между сотрудниками. Приложение позволяет добавлять задачи и сотрудников, генерировать случайное распределение задач и просматривать список всех задач.
 
 ## Установка
+
 1. Установите Python 3.
 2. Установите библиотеки Tkinter и mysql-connector-python с помощью pip:
-   
+
    pip install tkinter mysql-connector-python
-   
+
 3. Склонируйте репозиторий:
-   
-   git clone <https://github.com/Ramilsibigatulin/CourseProjectRamil_Lera.git>
-   
+
+   git clone https://github.com/Ramilsibigatulin/CourseProjectRamil_Lera.git
+
 4. Перейдите в директорию проекта:
 
-   cd <.\CourseProjectRamil_Lera\>
+   cd CourseProjectRamil_Lera
 
+5. Откройте MySQL Workbench.
+6. Свяжитесь с базой данных, запустив локальный хост:
+
+   В вкладке меню: Database -> Connect to Database, где выбираем:
+
+   Stored Connection: Local instance MySQL 80
+   Connection Method: Standart (TCP/IP)
+
+   Иными словами, оставляем все по умолчанию.
+
+7. значение Hostname - это host;
+   значение Username - это user;
 
 ## Настройка переменных окружения
 
@@ -30,19 +44,19 @@
    DB_USER=your-value
    DB_PASS=your-value
    DB_NAME=your-value
-   
+
 3. Установите библиотеку `python-dotenv`, которая позволяет вам легко загружать переменные окружения из файла `.env`:
 
    pip install python-dotenv
- 
+
 4. Теперь ваше приложение будет автоматически загружать эти переменные окружения при запуске.
 
 ## Использование
 
 1. Запустите приложение:
-   
+
    py employee.py
-   
+
 2. Введите название задачи и имя сотрудника в соответствующие поля.
 3. Нажмите кнопку "Добавить задачу" для добавления задачи.
 4. Нажмите кнопку "Генератор распределения задач" для генерации случайного распределения задач.
